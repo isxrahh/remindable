@@ -1,5 +1,4 @@
 import {AppSidebar} from "@/components/custom/AppSidebar";
-import {Navbar} from "@/components/ui/navbar";
 import {TopNav} from "@/components/custom/Navbar";
 import {TodoList} from "@/components/todo/TodoList";
 

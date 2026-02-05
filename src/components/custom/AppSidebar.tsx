@@ -2,7 +2,7 @@ import {
     Sidebar,
     SidebarContent,
     SidebarFooter,
-    SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel,
+    SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
     SidebarHeader,
     SidebarMenu, SidebarMenuAction, SidebarMenuButton, SidebarMenuItem
 } from "@/components/ui/sidebar";
@@ -12,7 +12,6 @@ import {
     Calendar1Icon,
     ChevronDown,
     Home,
-    House,
     List, Mail, Paperclip,
     Plus,
     SidebarIcon,
