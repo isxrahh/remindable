@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import {SidebarProvider, SidebarTrigger} from "@/components/ui/sidebar";
 import {AppSidebar} from "@/components/custom/AppSidebar";
+import {Navbar, NavbarProvider} from "@/components/ui/navbar";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -20,22 +21,20 @@ export const metadata: Metadata = {
     description: "AI To-do List Tracker",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
+export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">
         <body
+            suppressHydrationWarning
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
         <SidebarProvider>
             <AppSidebar/>
-            <main>
-                <SidebarTrigger/>
-                {children}
-            </main>
+            <NavbarProvider>
+                <main>
+                    {children}
+                </main>
+            </NavbarProvider>
         </SidebarProvider>
         </body>
         </html>
