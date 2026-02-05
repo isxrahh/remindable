@@ -2,7 +2,7 @@ import {
     Sidebar,
     SidebarContent,
     SidebarFooter,
-    SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel,
+    SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
     SidebarHeader,
     SidebarMenu, SidebarMenuAction, SidebarMenuButton, SidebarMenuItem
 } from "@/components/ui/sidebar";
@@ -12,7 +12,6 @@ import {
     Calendar1Icon,
     ChevronDown,
     Home,
-    House,
     List, Mail, Paperclip,
     Plus,
     SidebarIcon,
@@ -107,7 +106,7 @@ export function AppSidebar() {
                                     <ChevronDown className="ml-auto"/>
                                 </SidebarMenuButton>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent className="w-[--radix-popper-anchor-width]">
+                            <DropdownMenuContent className="w-[--radix-popper-anchor-width] dark:text-white">
                                 <DropdownMenuItem>
                                     <span>Personal</span>
                                 </DropdownMenuItem>
@@ -129,7 +128,7 @@ export function AppSidebar() {
                 {SIDEBAR_ITEMS.map((item, index) => (
                     <SidebarGroup key={index}>
                         <div className="flex items-center w-full px-2 py-1.5 gap-3">
-                            <div className="[&_svg]:size-5 text-gray-700">
+                            <div className="[&_svg]:size-5 text-gray-700 dark:text-white">
                                 {item.icon}
                             </div>
                             <span className="text-base flex-1 ml-2">{item.name}</span>
@@ -138,7 +137,7 @@ export function AppSidebar() {
                 ))}
                 <Separator/>
 
-                <Collapsible defaultOpen className="group/collapsible">
+                <Collapsible className="group/collapsible">
                     <SidebarGroup>
                         <SidebarGroupLabel asChild>
                             <CollapsibleTrigger
@@ -160,7 +159,7 @@ export function AppSidebar() {
                                                 </div>
                                                 <span
                                                     className="text-lg flex-1 ml-3 text-left">{item.name}</span>
-                                                <span className="text-sm text-slate-400">{item.id}</span>
+                                                <span className="text-sm text-slate-400 dark:text-white">{item.id}</span>
                                             </SidebarMenuButton>
                                         </SidebarMenuItem>
                                     ))}
@@ -201,7 +200,7 @@ export function AppSidebar() {
                     <SidebarGroup key={item.id} className="flex items-center justify-center">
                         <SidebarGroupLabel
                             className={`${
-                                item.id === 5 ? "text-blue-500" : "text-slate-500"
+                                item.id === 5 ? "text-blue-500" : "text-slate-500 dark:text-white"
                             } [&_svg]:size-8 hover:text-slate-800 transition-colors cursor-pointer`}
                         >
                             {item.icon}
