@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb53e56-966e-453c-8d1f-62142a87b288" name="Changes" comment="">
+    <list default="true" id="0cb53e56-966e-453c-8d1f-62142a87b288" name="Changes" comment="Fixes">
+      <change afterPath="$PROJECT_DIR$/src/components/custom/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/custom/SearchBox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo/TodoList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/animated-theme-toggler.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/dock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/primitive.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/custom/AppSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom/AppSidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/command.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/command.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/sheet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sheet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +87,8 @@
       <updated>1770193047502</updated>
       <workItem from="1770193049479" duration="7067000" />
       <workItem from="1770222996210" duration="6627000" />
+      <workItem from="1770268218695" duration="2257000" />
+      <workItem from="1770281285355" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="Implement Sidebar">
       <option name="closed" value="true" />
@@ -97,7 +98,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770200637641</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implement Navbar">
+      <option name="closed" value="true" />
+      <created>1770268251058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770268251058</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixes">
+      <option name="closed" value="true" />
+      <created>1770268657835</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770268657835</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +122,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement Sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Sidebar" />
+    <MESSAGE value="Implement Navbar" />
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
 </project>
