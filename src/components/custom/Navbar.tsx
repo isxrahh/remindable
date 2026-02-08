@@ -5,6 +5,7 @@ import {CircleQuestionMark, Grip, Megaphone, Settings} from "lucide-react";
 import {Avatar, AvatarBadge, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import {AnimatedThemeToggler} from "@/components/ui/animated-theme-toggler";
 import {SearchBox} from "@/components/custom/SearchBox";
+import {SidebarTrigger} from "@/components/ui/sidebar";
 
 export function TopNav() {
     return (
@@ -14,7 +15,13 @@ export function TopNav() {
                 <span className="font-bold">Remindable</span>
             </NavbarMobile>
 
-            <Navbar intent="inset" isSticky>
+            <Navbar intent="inset" isSticky className="bg-white dark:bg-background">
+                <NavbarSection className="min-w-[60px]">
+                    <NavbarItem>
+                        <SidebarTrigger/>
+                    </NavbarItem>
+                </NavbarSection>
+
                 <NavbarSection className="min-w-[120px]">
                     <NavbarItem href="/apps"><Grip/></NavbarItem>
                     <NavbarItem href="/"><span className="text-xl font-medium">To Do</span></NavbarItem>

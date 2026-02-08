@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cb53e56-966e-453c-8d1f-62142a87b288" name="Changes" comment="Fixes">
-      <change afterPath="$PROJECT_DIR$/src/components/custom/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/custom/SearchBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todo/TodoList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/animated-theme-toggler.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dock.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/primitive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remindable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remindable.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/command.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/command.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom/AppSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom/AppSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom/Click.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom/Click.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/TodoList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;editor&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
@@ -56,6 +59,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\remindable\src\components" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -88,7 +96,15 @@
       <workItem from="1770193049479" duration="7067000" />
       <workItem from="1770222996210" duration="6627000" />
       <workItem from="1770268218695" duration="2257000" />
-      <workItem from="1770281285355" duration="959000" />
+      <workItem from="1770281285355" duration="4569000" />
+      <workItem from="1770358446305" duration="804000" />
+      <workItem from="1770370408072" duration="2004000" />
+      <workItem from="1770376029812" duration="1716000" />
+      <workItem from="1770396413702" duration="1925000" />
+      <workItem from="1770450763615" duration="1041000" />
+      <workItem from="1770462636511" duration="1750000" />
+      <workItem from="1770481645085" duration="3003000" />
+      <workItem from="1770525935316" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="Implement Sidebar">
       <option name="closed" value="true" />

@@ -9,7 +9,9 @@ import {
     ContextMenuTrigger,
 } from "@/components/ui/context-menu"
 import {Cross, CrossIcon, X} from "lucide-react";
-
+interface ClickProps {
+    onEdit: () => void;
+}
 export function Click() {
     return (
         <div className="mx-auto">
@@ -23,6 +25,10 @@ export function Click() {
                     <ContextMenuItem>
                         Open Task
                         <ContextMenuShortcut>⌘ O</ContextMenuShortcut>
+                    </ContextMenuItem>
+                    <ContextMenuItem >
+                        Edit Task
+                        <ContextMenuShortcut>⌘ E</ContextMenuShortcut>
                     </ContextMenuItem>
                     <ContextMenuItem>
                         Save

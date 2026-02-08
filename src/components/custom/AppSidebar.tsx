@@ -4,7 +4,7 @@ import {
     SidebarFooter,
     SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
     SidebarHeader,
-    SidebarMenu, SidebarMenuAction, SidebarMenuButton, SidebarMenuItem
+    SidebarMenu, SidebarMenuAction, SidebarMenuButton, SidebarMenuItem, SidebarTrigger
 } from "@/components/ui/sidebar";
 import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 import {
@@ -22,6 +22,7 @@ import {
 import {Separator} from "@/components/ui/separator";
 import {Collapsible, CollapsibleContent, CollapsibleTrigger} from "@/components/ui/collapsible";
 import {RainbowButton} from "@/components/ui/rainbow-button";
+import Link from "next/link";
 
 export const SIDEBAR_FOOTER_ITEMS = [
     {
@@ -70,26 +71,31 @@ export const SIDEBAR_ITEMS = [
         id: 1,
         name: 'My Day',
         icon: <Sun/>,
+        path: '/my-day'
     },
     {
         id: 2,
         name: 'Important',
         icon: <Star/>,
+        path: '/important'
     },
     {
         id: 3,
         name: 'Planned',
         icon: <Calendar1Icon/>,
+        path: '/calendar'
     },
     {
         id: 4,
         name: 'Assigned to me',
         icon: <User/>,
+        path: '/assigned'
     },
     {
         id: 5,
         name: 'Tasks',
         icon: <Home/>,
+        path: '/tasks'
     },
 ]
 
@@ -97,6 +103,7 @@ export function AppSidebar() {
     return (
         <Sidebar>
             <SidebarHeader className="py-4">
+
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <DropdownMenu>
@@ -131,7 +138,9 @@ export function AppSidebar() {
                             <div className="[&_svg]:size-5 text-gray-700 dark:text-white">
                                 {item.icon}
                             </div>
-                            <span className="text-base flex-1 ml-2">{item.name}</span>
+                            <Link key={item.id} href={item.path} target="_blank" className="text-base flex-1 ml-2">
+                                <span>{item.name}</span>
+                            </Link>
                         </div>
                     </SidebarGroup>
                 ))}
@@ -159,7 +168,8 @@ export function AppSidebar() {
                                                 </div>
                                                 <span
                                                     className="text-lg flex-1 ml-3 text-left">{item.name}</span>
-                                                <span className="text-sm text-slate-400 dark:text-white">{item.id}</span>
+                                                <span
+                                                    className="text-sm text-slate-400 dark:text-white">{item.id}</span>
                                             </SidebarMenuButton>
                                         </SidebarMenuItem>
                                     ))}
@@ -186,8 +196,11 @@ export function AppSidebar() {
                         Corner</SidebarGroupLabel>
                     <div>
                         <SidebarMenuItem>
-                            <RainbowButton className="w-10/12 py-5 rounded-full text-lg font-light my-4 mx-6">Remindable
-                                AI</RainbowButton>
+                           <Link href="/remindable-ai" target="_blank">
+                               <RainbowButton className="w-10/12 py-5 rounded-full text-lg font-light my-4 mx-6">
+                                   Remindable AI
+                               </RainbowButton>
+                           </Link>
                         </SidebarMenuItem>
                     </div>
                 </SidebarGroup>
