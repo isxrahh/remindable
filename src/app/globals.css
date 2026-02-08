@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+@plugin "tailwind-scrollbar-hide";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -50,6 +52,8 @@
   --color-color-3: var(--color-3);
   --color-color-2: var(--color-2);
   --color-color-1: var(--color-1);
+  --color-brand: var(--brand);
+  --color-highlight: var(--highlight);
   @keyframes rainbow {
   0% {
     background-position: 0%;
@@ -58,7 +62,30 @@
     background-position: 200%;
     }
   }
-}
+  --animate-line-shadow: line-shadow 15s linear infinite
+;
+  @keyframes line-shadow {
+  0% {
+    background-position: 0 0;}
+  100% {
+    background-position: 100% -100%;}}
+  --animate-aurora: aurora 8s ease-in-out infinite alternate;
+  @keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);}
+  25% {
+    background-position: 50% 100%;
+    transform: rotate(5deg) scale(1.1);}
+  50% {
+    background-position: 100% 50%;
+    transform: rotate(-3deg) scale(0.95);}
+  75% {
+    background-position: 50% 0%;
+    transform: rotate(3deg) scale(1.05);}
+  100% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);}}}
 
 :root {
   --radius: 0.625rem;
@@ -98,6 +125,8 @@
   --color-3: oklch(69.6% 0.165 251);
   --color-4: oklch(80.2% 0.134 225);
   --color-5: oklch(90.7% 0.231 133);
+  --brand: oklch(0.623 0.214 259.815);
+  --highlight: oklch(0.852 0.199 91.936);
 }
 
 .dark {
@@ -137,6 +166,8 @@
   --color-3: oklch(69.6% 0.165 251);
   --color-4: oklch(80.2% 0.134 225);
   --color-5: oklch(90.7% 0.231 133);
+  --brand: oklch(0.707 0.165 254.624);
+  --highlight: oklch(0.852 0.199 91.936);
 }
 
 @layer base {
@@ -152,3 +183,72 @@
     animation: none;
     mix-blend-mode: normal;
 }
+
+
+
+/* 1. Main Container: Curved Borders & Responsiveness */
+.calendar-wrapper {
+    width: 100%;
+    padding: 2rem;
+}
+
+.fc {
+    background: #ffffff;
+    border-radius: 1px; /* Adjust for more/less curve */
+    overflow: hidden;
+}
+
+/* 2. Center the date numbers */
+.fc .fc-daygrid-day-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fc .fc-daygrid-day-number {
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* 3. Highlight Today's Date */
+.fc .fc-day-today {
+    background-color: #f0f7ff !important; /* Very light blue background */
+}
+
+/* Highlight the specific date number of today */
+.fc .fc-day-today .fc-daygrid-day-number {
+    color: #2563eb; /* Bright blue text */
+    font-weight: 800;
+}
+
+/* 4. Smooth Header Styling */
+.fc .fc-toolbar-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3a4557;
+    font-stretch: extra-expanded;
+}
+
+.fc .fc-button-primary {
+    background-color: #ffffff;
+    border-color: #d1d5db;
+    color: #2563eb;
+    text-transform: capitalize;
+    border-radius: 8px;
+}
+
+.fc .fc-button-primary:hover {
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+    color: darkblue;
+}
+
+/* 5. Ensure responsiveness with Sidebar */
+@media (max-width: 768px) {
+    .fc .fc-toolbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
